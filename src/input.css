@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.main-font{
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="output.css" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- tailwindcss  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-black main-font text-white">
+    <!-- navbar  -->
+    <nav
+      class="flex justify-between items-center mt-3 sm:mt-6 mx-3 sm:mx-12 gap-1 "
+    >
+    <div class="flex justify-center items-center gap-2 text-pink-800 hover:text-pink-600 hover:cursor-pointer">
+      <i class="fa-solid fa-book text-lg"></i>
+      <h1 class="text-2xl font-bold">MyDictionary</h1>
+    </div>
+
+    <!-- dark-mode btn  -->
+    <div class="flex justify-end sm:mx-4">
+      <button id="darkBtn" class="sm:border border-pink-800 transition-colors duration-300 delay-3000  sm:bg-pink-800 sm:hover:bg-pink-600 p-1 px-2 rounded-full"><i id="icon" class="fas fa-sun"></i></button>
+    </div>
+    </nav>
+
+    
+
+    <!-- search bar  -->
+    <section class="flex justify-center items-center text-white m-8 gap-6">
+      <input
+      id="input-word"
+        type="text"
+        placeholder="search"
+        class="focus:outline-none focus:ring-0 focus:border-pink-700 border border-pink-800 rounded-lg w-2xl h-8 p-4"
+      />
+      <button
+        class="hover:cursor-pointer text-pink-800 text-2xl hover:text-pink-600"
+        onclick="fetchData()"
+      >
+      <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </section>
+
+
+    <section id = "main-content" class="main-content mx-4 sm:mx-10 mb-20">
+      <!-- search-output  -->
+      <section id ="search-section">
+      </section>
+
+      <!-- verb section  -->
+      <section  id ="verb-section" class="mt-6 sm:mt-10">
+       
+      </section>
+
+      <!-- noun-section  -->
+      <section id="noun-section" class="mt-10">
+      </section>
+    </section>
+
+    <!-- link-javascript  -->
+    <script src="script.js"></script>
+    <script src="darkMode.js"></script>
+  </body>
+</html>
